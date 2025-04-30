@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Biometric Security Technologies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+
+    header {
+      background: #f5f7fa;
+      padding: 30px 40px;
+      color: #1a2a44;
+      position: relative;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+    .navbar {
+  display: flex;
+  font-size: 26px;
+  align-items: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a2a44;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #e0f2ff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #1a2a44;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #e0f2ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+
+    .slogan {
+      margin-right: 80px;
+      font-size: 1.7em;
+      font-style: italic;
+      font-weight: bold;
+      color: #00a8cc;
+      
+    }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-size: 2.8em;
+      margin: 10px 0;
+      color: #2c3e50;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      color: #666;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 500px;
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .card h3 {
+      font-size: 24px;
+      margin-top: 15px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 1.5em;
+      color: #555;
+    }
+
+    .learn-more {
+      color: #007acc;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      color: #1a2a44;
+      margin-top: 40px;
+    }
+    #backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 18px;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #005f8c;
+}
+
+footer {
+  background-color: #1a2a44;
+  color: #f0f0f0;
+  padding: 25px 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #a9d6ff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+  </style>
+</head>
+<body id="top">
+  <header>
+    <h1><i class="fas fa-shield-alt" style="margin-right: 10px; color: #007acc;"></i>Security</h1>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Technologies</a>
+      <div class="dropdown">
+        <a href="#">More <i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="slogan">"Your identity, your protection"</div>
+  </header>
+  
+  
+
+  <div class="hero">
+    <img src="PIC/BioL.jpg" alt="Biometric Fingerprint Scan" />
+    <h2>Revolutionizing Identity Verification</h2>
+    <p><i class="fas fa-lock" style="margin-right: 8px; color: #666;"></i>Explore the most advanced biometric technologies used in modern security systems.</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="PIC/FP.jpg" alt="Fingerprint Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Fingerprint Scanning</h3>
+      <p>One of the most widely used biometric methods, identifying users through unique ridge patterns on fingers.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+    <div class="card">
+      <img src="PIC/FR.jpg" alt="Facial Recognition Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Facial Recognition</h3>
+      <p>Facial recognition is a way of identifying or confirming an individual’s identity using their face. Facial recognition systems can be used to identify people in photos, videos, or in real-time.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+    <div class="card">
+      <img src="PIC/EyeScan.jpg" alt="Iris Scan Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Iris & Retina Scan</h3>
+      <p>Retinal and iris scans are both ocular-based biometric identification technologies that rely on the unique physiological characteristics of the eye to identify an individual. But, the two differ in the way they capture and analyze unique biological features.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+  </div>
+
+  <!-- NEW CONTENT SECTION -->
+  <h2 class="section-title">The Future of Biometric Security</h2>
+  <div class="card-container">
+    <div class="card">
+      <img src="PIC/voice-recog.png" alt="Facial Recognition Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Voice Recognition</h3>
+      <p>Authentication using vocal patterns, ensuring secure access even when visual identification is not possible.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+    <div class="card">
+      <img src="PIC/behave.jpg" alt="Facial Recognition Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Behavioral Biometrics</h3>
+      <p>Analyzes typing rhythm, mouse movement, and navigation habits to authenticate users in real time.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+    <div class="card">
+      <img src="PIC/vein.png" alt="Facial Recognition Technology" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h3>Vein Pattern Recognition</h3>
+      <p>Uses infrared light to scan unique vein patterns beneath the skin—hard to fake, highly secure.</p>
+      <a href="#" class="learn-more">Learn More →</a>
+    </div>
+  </div>
+  <a href="#top" id="backToTop" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+   
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 Biometric Security Technologies. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
+
